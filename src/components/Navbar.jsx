@@ -37,7 +37,7 @@ const Navbar = () => {
           <button onClick={() => scrollToId("services")}>Services</button>
           <button onClick={() => scrollToId("projects")}>Products</button>
           <button onClick={() => scrollToId("about")}>About</button>
-          <button onClick={() => scrollToId("contact")}>Contact</button>
+          <button onClick={() => scrollToId("contact")}>Contact Us</button>
         </nav>
       </div>
     </header>

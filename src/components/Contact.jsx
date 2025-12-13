@@ -116,7 +116,7 @@ export default function ContactForm() {
       <label htmlFor="">Email
         <input type="email" name="email" required/>
       </label>
-      <label>Company
+      <label>Message
         <textarea name="message" rows="4" required></textarea>
       </label>
       <button type="submit" className="btn-primary">Submit</button>
