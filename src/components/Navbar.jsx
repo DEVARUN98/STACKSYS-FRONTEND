@@ -20,7 +20,7 @@ const Navbar = () => {
           onClick={() => scrollToId("hero")}
           aria-label="Stacksys home"
         >
-          <span className="logo-accent">Stack</span>sys
+          <span className="logo-accent">Stack</span>Sys
         </button>
 
         <button

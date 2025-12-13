@@ -105,7 +105,7 @@ export default function ContactForm() {
 
       <h2>Contact Us</h2>
       <p className="section-subtitle">
-        Share your project idea, and <span className="logo-accent">Stack</span><span style={{color:'white'}}>sys</span> will respond with a proposal and
+        Share your project idea, and <span className="logo-accent">Stack</span><span style={{color:'white'}}>Sys</span> will respond with a proposal and
         timeline.
       </p>
     
