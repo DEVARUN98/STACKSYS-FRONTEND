@@ -35,7 +35,7 @@ const Navbar = () => {
 
         <nav className={`nav-links ${open ? "nav-links-open" : ""}`}>
           <button onClick={() => scrollToId("services")}>Services</button>
-          <button onClick={() => scrollToId("projects")}>Projects</button>
+          <button onClick={() => scrollToId("projects")}>Products</button>
           <button onClick={() => scrollToId("about")}>About</button>
           <button onClick={() => scrollToId("contact")}>Contact</button>
         </nav>

@@ -2,7 +2,7 @@ import React from "react";
 
 const projects = [
   {
-    name: "BillStack",
+    name: "BillSys",
     type: "Billing & inventory",
     desc: "Invoice and inventory management with role‑based access and PDF exports.",
     stack: "React, Django REST, PostgreSQL",
@@ -13,18 +13,13 @@ const projects = [
     desc: "Vehicle insurance premium calculation with policy workflows.",
     stack: "React, Django REST, PostgreSQL",
   },
-  {
-    name: "MDM Console",
-    type: "Device management",
-    desc: "Internal device management portal with dashboards and audit logs.",
-    stack: "React, Django, REST APIs",
-  },
+
 ];
 
 const Projects = () => {
   return (
     <section id="projects" className="section">
-      <h2>Projects</h2>
+      <h2>Products</h2>
       <p className="section-subtitle">
         A sample of products and internal tools delivered by Stacksys.
       </p>
