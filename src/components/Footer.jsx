@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-inner">
         <p>© {new Date().getFullYear()} Stacksys Software Company.</p>
-        <p className="muted">Built with React.</p>
+        {/* <p className="muted">Built with React.</p> */}
       </div>
     </footer>
   );
