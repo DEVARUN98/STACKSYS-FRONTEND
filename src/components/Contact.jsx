@@ -101,7 +101,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section>
+    <section id="contact" className="section">
 
       <h2>Contact Us</h2>
       <p className="section-subtitle">
