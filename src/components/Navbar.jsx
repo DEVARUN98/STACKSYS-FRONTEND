@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ dark, setDark }) => {
   const [open, setOpen] = useState(false);
 
   const scrollToId = (id) => {
@@ -38,6 +38,12 @@ const Navbar = () => {
           <button onClick={() => scrollToId("projects")}>Products</button>
           <button onClick={() => scrollToId("about")}>About</button>
           <button onClick={() => scrollToId("contact")}>Contact Us</button>
+          <button
+            className="theme-toggle"
+            onClick={() => setDark((prev) => !prev)}
+            >
+            {dark ? "Light mode" : "Dark mode"}
+          </button>
         </nav>
       </div>
     </header>
