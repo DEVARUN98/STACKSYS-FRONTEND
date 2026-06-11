@@ -17,6 +17,10 @@ const services = [
     title: "Maintenance & support",
     desc: "Ongoing improvements, refactors, and production monitoring.",
   },
+  {
+    title: "Custom websites",
+    desc: "Fast,modern websites built for growth and engage customers.",
+  },
 ];
 
 const Services = () => {

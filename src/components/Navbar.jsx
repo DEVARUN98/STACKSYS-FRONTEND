@@ -38,12 +38,12 @@ const Navbar = ({ dark, setDark }) => {
           <button onClick={() => scrollToId("projects")}>Products</button>
           <button onClick={() => scrollToId("about")}>About</button>
           <button onClick={() => scrollToId("contact")}>Contact Us</button>
-          <button
+          {/* <button
             className="theme-toggle"
             onClick={() => setDark((prev) => !prev)}
             >
             {dark ? "Light mode" : "Dark mode"}
-          </button>
+          </button> */}
         </nav>
       </div>
     </header>

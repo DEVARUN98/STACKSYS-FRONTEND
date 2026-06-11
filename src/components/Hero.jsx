@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-inner">
         <div className="hero-text">
-          <p className="eyebrow">Stacksys Software Company</p>
+          <p className="eyebrow">Stacksys Softwares</p>
           <h1>Full‑stack products that grow with your business.</h1>
           <p className="hero-subtitle">
             Stacksys builds modern web applications with clean architecture,
