@@ -19,7 +19,7 @@ const services = [
   },
   {
     title: "Custom websites",
-    desc: "Fast,modern websites built for growth and engage customers.",
+    desc: "Fast, modern websites built for growth and engage customers.",
   },
 ];
 
