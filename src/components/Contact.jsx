@@ -79,6 +79,10 @@
 
 
 import { useState } from 'react';
+import call_center from './../Call_Center.json'
+import Lottie from 'lottie-react'
+import full_support from './../full_support.json'
+
 
 export default function ContactForm() {
   const [result, setResult] = useState("");
@@ -102,26 +106,47 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="section">
+      <div className="contact-container">
 
-      <h2>Contact Us</h2>
-      <p className="section-subtitle">
-        Share your project idea, and <span className="logo-accent">Stack</span><span style={{color:'white'}}>Sys</span> will respond with a proposal and
-        timeline.
-      </p>
-    
-    <form className="form" onSubmit={onSubmit}>
-      <label>Name
-        <input type="text" name="name" required/>
-      </label>
-      <label htmlFor="">Email
-        <input type="email" name="email" required/>
-      </label>
-      <label>Message
-        <textarea name="message" rows="4" required></textarea>
-      </label>
-      <button type="submit" className="btn-primary">Submit</button>
-      <p>{result}</p>
-    </form>
+        {/* Left Side */}
+        <div className="contact-content">
+          <h2>Contact Us</h2>
+
+          <p className="section-subtitle">
+            Share your project idea, and
+            <span className="logo-accent"> Stack</span>
+            <span style={{ color: "white" }}>Sys</span>
+            {" "}will respond with a proposal and timeline.
+          </p>
+          <form className="form" onSubmit={onSubmit}>
+            <label>Name
+              <input type="text" name="name" required />
+            </label>
+            <label htmlFor="">Email
+              <input type="email" name="email" required />
+            </label>
+            <label>Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit" className="btn-primary">Submit</button>
+            <p>{result}</p>
+          </form>
+
+          <form className="form">
+            {/* form fields */}
+          </form>
+        </div>
+
+        {/* Right Side */}
+        <div className="contact-image">
+          <Lottie
+            animationData={call_center}
+            loop={true}
+            style={{ width: "450px" }}
+          />
+        </div>
+
+      </div>
     </section>
   );
 }

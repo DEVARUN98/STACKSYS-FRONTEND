@@ -7,13 +7,15 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
+import WelcomeChild from "./components/Animation";
+
 
 function App() {
-  const [dark,setDark]=useState(true);
+  const [dark, setDark] = useState(true);
   return (
     // <div className={dark ? "app_dark" : "app"}>
-    <div className= "app">
-      <Navbar  dark={dark} setDark={setDark}/>
+    <div className="app">
+      <Navbar dark={dark} setDark={setDark} />
       <main>
         <Hero />
         <Services />
