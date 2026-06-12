@@ -7,7 +7,6 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
-import WelcomeChild from "./components/Animation";
 
 
 function App() {
