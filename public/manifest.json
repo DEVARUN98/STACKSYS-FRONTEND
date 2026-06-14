@@ -3,12 +3,12 @@
   "name": "StackSys - Web Development & IT Solutions",
   "icons": [
     {
-      "src": "stacksys.png",
+      "src": "stacksys-logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "stacksys.png",
+      "src": "stacksys-logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
