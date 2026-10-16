@@ -56,6 +56,14 @@
   cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  scroll-margin-top: 90px;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav-toggle {
