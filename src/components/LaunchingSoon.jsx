@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './LaunchingSoon.css'; 
-import dentstacklogo from './dentstacklogo.png'; 
 import dentstacklogoblack from './dentstackpnglogoblack.png'; 
 
 export default function LaunchingSoon() {
