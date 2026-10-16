@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="hero-inner">
         <div className="hero-text">
           <p className="eyebrow">Stacksys Softwares</p>
-          <h1>Full‑stack products that grow with your business.</h1>
+          <h1>Full‑Stack Products That Grow With Your Business.</h1>
           <p className="hero-subtitle">
             Stacksys builds modern web applications with clean architecture,
             scalable APIs, and beautiful UIs.

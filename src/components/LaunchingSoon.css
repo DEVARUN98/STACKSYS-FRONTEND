@@ -1,0 +1,251 @@
+:root {
+  --bg-dark: #020212;       /* Main dark background navy */
+  --bg-card: #0D142C;       /* Modal card background */
+  --neon-green: #14C656;    /* Accent neon green */
+  --text-muted: #8A94A6;    /* Secondary grey body copy */
+}
+
+/* Master full viewport wrapper */
+.launch-wrapper {
+  /* background-color: var(--bg-dark); */
+  background-color: transparent;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main Split Grid/Flex Box System */
+.launch-container-split {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-height: auto;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Left Brand Panel: Keeps your logo centered, sharp, and clean */
+.left-brand-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.brand-featured-logo {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  /* Soft background fade-glow to isolate the logo crispness */
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.05));
+}
+
+/* Right Panel Layout Configuration */
+.right-content-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.panel-inner-content {
+  max-width: 520px;
+  text-align: left; /* Aligns content cleanly to match right-side orientation */
+}
+
+/* Glowing text structure */
+.neon-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  text-shadow: 0 0 7px #fff, 0 0 21px var(--neon-green), 0 0 42px var(--neon-green);
+  animation: neonPulse 2s infinite alternate ease-in-out;
+}
+
+.sub-text {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 36px 0;
+}
+
+/* Interactive Book a Demo Button */
+.demo-btn {
+  background-color: var(--neon-green);
+  color: var(--bg-dark);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(20, 198, 86, 0.25);
+}
+
+.demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 198, 86, 0.45);
+  background-color: #1cf06b;
+}
+
+/* ==========================================================================
+   MODAL CORE POPUP WINDOW STYLES 
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 6, 15, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+.modal-content {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 460px;
+  padding: 32px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-content h2 {
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  font-size: 1.6rem;
+}
+
+.modal-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover:not(:disabled) { color: #ffffff; }
+.close-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(7, 11, 25, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--neon-green);
+}
+
+.form-group input:disabled, 
+.form-group textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--neon-green);
+  color: var(--bg-dark);
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+
+.submit-btn:hover:not(:disabled) { background-color: #1cf06b; }
+.submit-btn:disabled { opacity: 0.6; background-color: var(--text-muted); cursor: not-allowed; }
+
+/* Keyframe Animations */
+@keyframes neonPulse {
+  0% { transform: scale(0.98); opacity: 0.95; }
+  100% { transform: scale(1.02); opacity: 1; }
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlideUp {
+  from { transform: translateY(24px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive configurations for small mobile displays */
+@media (max-width: 968px) {
+  .launch-container-split {
+    flex-direction: column; /* Stack vertically on tablets and mobile screens */
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .panel-inner-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .neon-text { font-size: 2.5rem; }
+  .brand-featured-logo { max-width: 280px; }
+  .demo-btn { width: 100%; max-width: 320px; }
+  .modal-content { padding: 24px; width: 90%; }
+}

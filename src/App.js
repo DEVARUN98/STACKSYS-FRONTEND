@@ -17,8 +17,8 @@ function App() {
       <Navbar dark={dark} setDark={setDark} />
       <main>
         <Hero />
-        <Services />
         <Projects />
+        <Services />
         <About />
         <Contact />
       </main>

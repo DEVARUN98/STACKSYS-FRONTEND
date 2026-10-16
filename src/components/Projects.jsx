@@ -1,20 +1,6 @@
 import React from "react";
+import LaunchingSoon from "./LaunchingSoon";
 
-const projects = [
-  {
-    name: "BillSys",
-    type: "Billing & inventory",
-    desc: "Invoice and inventory management with role‑based access and PDF exports.",
-    stack: "React, Django REST, PostgreSQL",
-  },
-  {
-    name: "InsureStack",
-    type: "Insurance platform",
-    desc: "Vehicle insurance premium calculation with policy workflows.",
-    stack: "React, Django REST, PostgreSQL",
-  },
-
-];
 
 const Projects = () => {
   return (
@@ -23,7 +9,7 @@ const Projects = () => {
       <p className="section-subtitle">
         A sample of products and internal tools delivered by Stacksys.
       </p>
-      <div className="grid">
+      {/* <div className="grid">
         {projects.map((p) => (
           <article key={p.name} className="card">
             <h3>{p.name}</h3>
@@ -32,7 +18,9 @@ const Projects = () => {
             <p className="tagline">Stack: {p.stack}</p>
           </article>
         ))}
-      </div>
+      </div> */}
+
+      <LaunchingSoon />
     </section>
   );
 };
