@@ -194,7 +194,7 @@ const handleSubmit = async (e) => {
                 className="submit-btn" 
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Processing..." : "Request for Demo"}
+                {isSubmitting ? "Submitting..." : "Request for Demo"}
               </button>
             </form>
           </div>
