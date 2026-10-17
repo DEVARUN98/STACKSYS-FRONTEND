@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects" className="section">
       <h2>Products</h2>
       <p className="section-subtitle">
-        A sample of products and internal tools delivered by Stacksys.
+        {/* A sample of products and internal tools delivered by Stacksys. */}
       </p>
       {/* <div className="grid">
         {projects.map((p) => (

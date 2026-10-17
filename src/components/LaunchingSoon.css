@@ -249,3 +249,69 @@
   .demo-btn { width: 100%; max-width: 320px; }
   .modal-content { padding: 24px; width: 90%; }
 }
+
+/* Toast Notification */
+.toast-message {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  max-width: calc(100vw - 40px);
+  padding: 15px 22px;
+
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  transform: translateX(60px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+/* Fade In from right */
+.toast-message.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade Out towards right */
+.toast-message.fade-out {
+  opacity: 0;
+  transform: translateX(60px);
+  pointer-events: none;
+}
+
+.toast-message.success {
+  background-color: #16a34a;
+}
+
+.toast-message.error {
+  background-color: #dc2626;
+}
+
+.toast-icon {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .toast-message {
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    max-width: none;
+    padding: 13px 16px;
+    font-size: 13px;
+  }
+}
