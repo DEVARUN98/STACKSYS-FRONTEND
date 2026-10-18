@@ -163,7 +163,7 @@ const handleSubmit = async (e) => {
                   name="phone"
                   required 
                   disabled={isSubmitting}
-                  placeholder="123-456-7890" 
+                  placeholder="9876543210" 
                 />
               </div>
 
